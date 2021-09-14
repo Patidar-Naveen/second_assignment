@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="home.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>assignment2</title>
+</head>
+<body>
+    <main class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand text-black font-weight-bold" href="#"><img src="images/logo1.jpg" alt="logo" height="50" width="150"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mul">
+                        <li class="nav-item "> <a href="home.html" id="nitem" >HOME</a></li>
+                        <li class="nav-item"> <a href="#" id="nitem">SHOP</a></li>
+                        <li class="nav-item"> <a href="#" id="nitem">PICNIC</a></li>
+                        <li class="nav-item"> <a href="#" id="nitem">PAGE</a></li>
+                        <li class="nav-item"> <a href="#" id="nitem">PROMOTION</a></li>
+                        <li class="nav-item"> <a href="#" id="nitem">BLOG</a></li>
+                        <li class="nav-item"> <a href="#" id="nitem" class="text-primary">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <div class="d-block m-auto">
+                    <i class="fa fa-search ml-3"></i>
+                    <i class="fa fa-shopping-cart ml-3"></i>
+                    <i class="fa fa-bars ml-3"></i>
+                </div>
+            </div>
+        </nav>
+        <section class="consult">
+        <div class="text-center font-weight-bold pt-5 mt-5 mb-2">
+          <h3>Registration Form</h3>
+        </div>
+        <div class="container mb-5">
+          <form action="index.html" method="POST" onsubmit="return validation()">
+              <div class="alert alert-danger" role="alert" id="error"></div>
+              <div class="form-group">
+                  <label><b>Name</b></label>
+                  <input type="text" id="name" placeholder="Enter your name" class="form-control" onblur="function1()">
+              </div>
+              <div class="form-group">
+                  <label><b>Email</b></label>
+                  <input type="text" id="mail" placeholder="Enter your email-id" class="form-control" onblur="function2()">
+              </div>
+              <div class="form-group">
+                  <label><b>Contact No.</b></label>
+                  <input type="text" id="contact" placeholder="Enter your Contact No." class="form-control" onblur="function3()">
+              </div>
+              <div class="form-group">
+                  <label><b>Gender &nbsp;</b>
+                  <input type="radio" id="male" name="gender" value="male"> Male &nbsp;
+                  <input type="radio" id="female" name="gender" value="female"> Female </label>
+              </div>
+              <div class="form-group">
+                  <label><b>Any Query Ask Here</b></label>
+                  <textarea name="feedback" id="feedback" cols="30" rows="10" class="form-control" placeholder="Enter your feedback/complaint" onblur="function4()"></textarea>
+              </div>
+              <button type="submit" class="btn btn-success">Submit</button>
+          </form>
+        </div>
+      </section>
+        <footer>
+            <section class="quote">
+              <img src="images/albert.jpg" alt="albert" class="albert">
+              <h1 class="mt-5"><sup class="fa fa-quote-left text-muted"></sup> You Can Blame Gravity for falling in love <sup class="fa fa-quote-right text-muted"></sup></h1>
+              <h4 class="text-light mt-5 mb-0">Albert Einstein</h4>
+              <h5 class="text-warning mt-1">physicist</h5>
+            </section>
+            <section class="container-fluid">
+              <div class="row">
+                <div class="col text-white text-center py-3" style="background-color:rgb(4,4,70) ;">
+                  <i class="fa fa-facebook mr-1"></i> FACEBOOK
+                </div>
+                <div class="col text-white text-center py-3" style="background-color: rgb(82, 194, 246);">
+                  <i class="fa fa-twitter mr-1"></i>TWITTER
+                </div>
+                <div class="col text-white text-center py-3" style="background-color:rgb(184, 23, 130);">
+                  <i class="fa fa-instagram mr-1"></i>INSTAGRAM
+                </div>
+                <div class="col text-white text-center py-3" style="background-color:rgb(218, 95, 177);">
+                  <i class="fa fa-dribbble mr-1"></i>DRIBBBLE
+                </div>
+                <div class="col text-white text-center py-3" style="background-color:rgb(192, 43, 55);">
+                  <i class="fa fa-pinterest-p mr-1"></i> PINTEREST
+                </div>
+              </div>
+            </section>
+            <section class="foot">
+              <img src="images/logo2.jpg" alt="no" height="50" width="100" class="mt-5">
+              <p class="text-muted mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Minus obcaecati molestiae commodi, iure nesciunt repudiandae<br>
+                 quaerat aspernatur deserunt</p>
+              <img src="images/cards.jpg" alt="no" height="50" width="250" class="mt-2">
+              </section>
+              <section class="text-center my-3">
+                <small>Copyright @2016 Desgined by <span class="text-primary">Naveen</span>  - all right reserved</small>
+              </section>
+          </footer>
+</main>
+      <script src="JavaScript.js"></script>
+</body>
+</html>
